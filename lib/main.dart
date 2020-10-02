@@ -27,13 +27,13 @@ class _LoginPageState extends State<LoginPage> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Padding(
-          padding: const EdgeInsets.symmetric(vertical: 70),
+          padding: const EdgeInsets.symmetric(vertical: 60),
           child: Text(
             'GIMME',
             style: TextStyle(
               fontSize: MediaQuery.of(context).size.height / 25,
               fontWeight: FontWeight.bold,
-              color: Colors.white,
+              color: Colors.black,
             ),
           ),
         )
@@ -53,10 +53,10 @@ class _LoginPageState extends State<LoginPage> {
         },
         decoration: InputDecoration(
             prefixIcon: Icon(
-              Icons.email,
+              Icons.beenhere,
               color: mainColor,
             ),
-            labelText: 'E-mail'),
+            labelText: 'E-mail Address'),
       ),
     );
   }
@@ -74,7 +74,7 @@ class _LoginPageState extends State<LoginPage> {
         },
         decoration: InputDecoration(
           prefixIcon: Icon(
-            Icons.lock,
+            Icons.lock_outline,
             color: mainColor,
           ),
           labelText: 'Password',
